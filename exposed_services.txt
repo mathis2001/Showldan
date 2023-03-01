@@ -5,7 +5,7 @@ x-jenkins 200
 port:2375 product:"docker"
 product:tomcat
 proftpd port:21
-openssh:port22
+openssh port:22
 port:25 product:exim
 remote desktop port:3389
 "authentication disabled" "RFB 003.008"
