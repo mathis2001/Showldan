@@ -1,0 +1,12 @@
+port:23 gateway console
+"220" "230 Login successful." port:21
+x-jenkins 200
+"X-Jenkins" "Set-Cookie: JSESSIONID" http.title:Dashboard
+port:2375 product:"docker"
+product:tomcat
+proftpd port:21
+openssh:port22
+port:25 product:exim
+remote desktop port:3389
+"authentication disabled" "RFB 003.008"
+"Authentication: disabled" port:445

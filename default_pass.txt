@@ -1,0 +1,8 @@
+default password
+guest login ok
+"admin/1234"
+Sharename Type Comment port:445
+ftpd Anonymous user logged in
+basic realm="default"
+" Default name:admin password: 1234"
+password required but none set

@@ -1,0 +1,11 @@
+http.title:"Index of /" http.html:".pem"
+http.title:"Directory Listing"
+http.html:"* The wp-config.php creation script uses this file"
+http.title:"phpmyadmin"
+http.html:"def_wirelesspassword"
+http.title:"phpinfo()"
+http.title:"Apache Status"
+http.title:"Oracle Weblogic Server Administration Console"
+http.title:"Swagger UI - "
+"X-Debug-Token-Link" port:443
+"-AkamaiGHost" "-GHost" "-Cloudflare" "-Cloudfront"
