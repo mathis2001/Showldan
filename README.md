@@ -1,5 +1,5 @@
 # Showldan
-Reconnaissance tool using shodan API to find juicy stuff during bug hunting.
+Reconnaissance tool using shodan API automating shodan information gathering process to find juicy stuff during bug hunting. 
 
 ## Prerequisites:
 
