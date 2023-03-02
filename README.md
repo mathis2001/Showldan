@@ -53,7 +53,7 @@ python3 showldan.py -n -t <target> [-s] [-p] [-i] [-d]
 ```
 ## Screenshots:
 
-![image](https://user-images.githubusercontent.com/40497633/222154297-a5b53836-f134-4cf9-bd54-c633023ec3ea.png)
+![image](https://user-images.githubusercontent.com/40497633/222399394-0bde1a6b-bba3-4428-a888-c6b6530a9f76.png)
 ![image](https://user-images.githubusercontent.com/40497633/222180857-9419ca55-7491-4b16-bad5-146301a8f222.png)
 ![image](https://user-images.githubusercontent.com/40497633/222180918-64c81e76-5b5c-4506-a438-5e3b1408b651.png)
 ![image](https://user-images.githubusercontent.com/40497633/222398700-ad36b25f-606a-4c14-bfc3-e37bb0583118.png)
