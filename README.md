@@ -20,7 +20,14 @@ To use this tool, you'll have to get your shodan.io api key at https://account.s
 Then, you can use the tool as follow:
 
 ```bash
-./showldan.py [-t target domain] [-s] [-p] [-i] [-d]
+#Search by domain name
+python3 showldan.py -t <target domain> [-s] [-p] [-i] [-d]
+
+#Search by organization name
+python3 showldan.py -O -t <organization name> [-s] [-p] [-i] [-d]
+
+#Search by domain name or organization name without prefix tag like "hostname:", "ssl:" or "org:"
+python3 showldan.py -n -t <target> [-s] [-p] [-i] [-d]
 ```
 
 
@@ -28,7 +35,11 @@ Then, you can use the tool as follow:
 ```bash
   -h, --help                      show this help message and exit
   
-  -t, --target                    Target domain
+  -t, --target                    Target domain/organization 
+  
+  -O, --organization              Search by organization name
+  
+  -n, --no-prefixtag              Search without prefix tag before target
   
   -s, --exposed-services          Search for exposed services
   
