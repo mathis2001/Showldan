@@ -18,3 +18,4 @@ remote desktop port:3389
 "MongoDB Server Information { "metrics":"
 "Set-Cookie: mongo-express=" "200 OK"
 kibana content-legth:217
+http.title:"DisallowedHost at /"
