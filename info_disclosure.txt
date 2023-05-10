@@ -10,5 +10,6 @@ http.title:"Swagger UI"
 "X-Debug-Token-Link" port:443
 "AkamaiGHost"
 "GHost"
-"Cloudflare","Cf","Cf-cache"
+"Cloudflare","Cf","Cf-cache","CF-Connection_IP"
 "Cloudfront"
+"X-API-Version"
