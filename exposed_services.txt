@@ -20,3 +20,12 @@ remote desktop port:3389
 "Set-Cookie: mongo-express=" "200 OK"
 kibana content-legth:217
 http.title:"DisallowedHost at /"
+%22Set-Cookie%3A+webvpn%22
+%22webvpn%3D%22
+Server%3A+xxxxxxxx-xxxxx+-ssl%3A%22fortinet%22
+ssl%3A%22fortinet%22
+title%3A%22SSL+VPN+Service%22
+Server%3A+xxxxxxxx-xxxxx+ssl%3A%22fortinet%22
+http.html_hash%3A-1454941180
+http.favicon.hash%3A945408572
+http.html_hash%3A-628873716
