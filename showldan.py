@@ -69,13 +69,30 @@ def main():
 		if args.no_prefixtag:
 			prefix = []
 			target = args.target
+			firstcheck = api.search(target)
+			results = str(firstcheck['total'])
+			if results == '0':
+				print(bcolors.FAIL+"[!] "+bcolors.RESET+'No result found for '+target+' without prefix, script canceled.')
+				exit(0)
 		elif args.organization:
 			prefix = ["org:"]
 			targetorg = prefix[0]+args.target
+			firstcheck = api.search(targetorg)
+			results = str(firstcheck['total'])
+			if results == '0':
+				print(bcolors.FAIL+"[!] "+bcolors.RESET+'No result found for '+targetorg+", script canceled.")
+				exit(0)
 		else:
-			prefix = ['ssl.cert.subject.CN:.','hostname:*.']
+			prefix = ['ssl:','hostname:']
 			targetBySSL = prefix[0]+args.target
 			targetByHost = prefix[1]+args.target
+			firstcheck = api.search(targetBySSL)
+			secondcheck = api.search(targetByHost)
+			resultSSL = str(firstcheck['total'])
+			resultHost = str(secondcheck['total'])
+			if resultSSL == '0' and resultHost == '0':
+				print(bcolors.FAIL+"[!] "+bcolors.RESET+'No result found for both '+targetBySSL+' and '+targetByHost+", script canceled.")
+				exit(0)
 		if args.exposed_services:
 			print(bcolors.INFO+"[*] "+bcolors.RESET+'Searching exposed services for '+bcolors.INFO+args.target+bcolors.RESET)
 			with open("exposed_services.txt", "r") as services:
