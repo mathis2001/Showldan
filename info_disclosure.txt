@@ -15,3 +15,4 @@ http.title:"Swagger UI"
 "X-API-Version"
 "X-Amz-Bucket-Region"
 http.favicon.hash:116323821
+"X-Confluence"
