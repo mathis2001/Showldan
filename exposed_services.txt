@@ -30,3 +30,6 @@ http.html_hash%3A-1454941180
 http.favicon.hash%3A945408572
 http.html_hash%3A-628873716
 http.title:"gitlab"
+"Set-Cookie: _gitlab_session"
+"kbn-name: kibana"
+"X-elastic-product: Elasticsearch"
