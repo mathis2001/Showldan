@@ -14,6 +14,7 @@ parser.add_argument("-p", "--default-pass", help="Search for default passwords",
 parser.add_argument("-i", "--info-disclosure", help="Search for information disclosure", action="store_true")
 parser.add_argument("-d", "--domain-takeover", help="Search for domain takeover", action="store_true")
 parser.add_argument("-n", "--no-prefixtag", help="Search without tag before target", action="store_true")
+parser.add_argument("-H", "--host-discovery", help="Search for hosts", action="store_true")
 parser.add_argument("-l", "--limit", help="Limit of results", type=str)
 args= parser.parse_args()
 
@@ -154,6 +155,11 @@ def main():
 						print(bcolors.INFO+"[*] "+bcolors.RESET+'Prefix used: '+bcolors.INFO+prefix[1]+bcolors.RESET)
 						ShodanSearch(targetByHost, search)
 
+		if args.host_discovery:
+                        prefix = 'ssl:'
+                        target = prefix+args.target
+                        search = ''
+                        ShodanSearch(target, search)
 
 try:
 	banner()
